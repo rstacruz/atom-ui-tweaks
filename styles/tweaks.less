@@ -1,5 +1,9 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 @import 'ui-variables';
+@import 'syntax-variables';
+
+@light-background: #eeeeee; /* Vimix light */
+@dark-text-bold: #ffffff;
 
 /* One-line ctrl+p */
 .one-ui-tweaks--all,
@@ -52,4 +56,327 @@
   .status-bar #status-bar-vim-mode-plus {
     display: none;
   }
+}
+
+/*
+ * stealth indent guides (indent-guide-improved)
+ */
+
+.one-ui-tweaks--stealth-indent-guide {
+  .indent-guide-improved {
+    background-color: transparent;
+    border-left: dotted 1px #8fa0;
+
+    &.indent-guide-stack {
+      background-color: transparent;
+      border-left: dotted 1px #8fa2;
+
+      &.indent-guide-active {
+        background-color: transparent;
+        border-left: dotted 1px #8fa4;
+      }
+    }
+  }
+}
+
+/* --- */
+
+/*
+ * Magic UI background
+ */
+
+.ui-dark-background when (lightness(@syntax-background-color) >= 50%) {
+  background-color: #3f444d !important; /* Vimix dark */
+}
+
+.ui-dark-background when (lightness(@syntax-background-color) < 50%) {
+  background-color: darken(@syntax-background-color, 5%) !important;
+}
+
+/*
+ * One-dark and one-light customizations
+ */
+
+.theme-one-dark-ui,
+.theme-one-light-ui {
+  /* Remove extra 1px border around terminal */
+  .panel-bottom {
+    border: 0;
+  }
+
+  /* Remove borders around panes */
+  atom-pane-container atom-pane {
+    border-right: none;
+    border-bottom: none;
+  }
+
+  /* Tab bar for the project pane */
+  atom-dock .tab-bar {
+    order: 100;
+    opacity: 0;
+  }
+
+  atom-dock:hover .tab-bar {
+    opacity: 1;
+  }
+
+  /* Extra padding on top */
+  atom-text-editor.vim-mode-plus:not(.mini) {
+    padding-top: 16px;
+  }
+
+  /* Increase height of atom-notes */
+  .select-list ol.list-group {
+    max-height: 80vh;
+  }
+
+  /* Status bar on top (lol) */
+  atom-panel-container.footer {
+    order: -1;
+  }
+
+  /* Bold status bar filename */
+  status-bar a.current-path {
+    font-weight: bold;
+  }
+
+  /* No border */
+  .tab {
+    border-left: 0;
+  }
+
+  /* Remove tab highlight */
+  .tab.active::before {
+    display: none;
+  }
+
+  /* Smaller line numbers */
+  .line-number:not(.cursor-line) {
+    opacity: 0.3;
+    transform: scale(0.7);
+  }
+
+  /* Line numbers of functions */
+  .line-number.foldable {
+    opacity: 0.8;
+  }
+
+  /* Increased visibility of folds */
+  .line-number.folded:not(.cursor-line) {
+    opacity: 1;
+    background: #8882;
+    border-radius: 3px;
+  }
+
+  // .status-bar:not(:hover) {
+  //   .line-ending-tile,
+  //   .deprecation-cop-status,
+  //   .encoding-status {
+  //     display: none;
+  //   }
+  // }
+}
+
+/*
+ * Light theme customizations
+ */
+
+atom-workspace.theme-one-light-ui {
+  /* Force workspace background to blend with titlebar */
+  // &,
+  // atom-panel,
+  // .atom-dock-mask,
+  // .tool-panel,
+  // .panel,
+  // .status-bar,
+  // atom-dock .tab.active,
+  // .tab-bar,
+  // .tab-bar .tab:not(.active) {
+  //   background: @light-background !important;
+  // }
+
+  /* Slighter status bar */
+  .status-bar:not(:hover) .status-bar-right {
+    opacity: 0.6;
+  }
+
+  .tab:last-of-type {
+    box-shadow: inset 0 -1px 0 #d0dde2;
+  }
+
+  /* Darker line number highlights */
+  .line-number.foldable:not(.cursor-line) {
+    opacity: 1;
+    color: #357 !important;
+  }
+
+  /* Round out some borders */
+  .tab.active {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
+
+/*
+ * Dark theme customizations
+ */
+
+atom-workspace.theme-one-dark-ui {
+  /* Force workspace background to blend with titlebar */
+  &,
+  atom-panel,
+  .atom-dock-mask,
+  .tool-panel,
+  .panel,
+  .status-bar,
+  atom-dock .tab.active,
+  .tab-bar,
+  .tab-bar .tab:not(.active) {
+    .ui-dark-background();
+  }
+
+  /* Slighter status bar */
+  .status-bar:not(:hover) .status-bar-right {
+    opacity: 0.6;
+  }
+
+  .tab:last-of-type {
+    box-shadow: inset 0 -1px 0 #11141c;
+  }
+
+  /* Line numbers: opacity */
+  .line-number:not(.cursor-line) {
+    opacity: 0.1;
+  }
+
+  .line-number.foldable:not(.cursor-line) {
+    opacity: 0.5;
+  }
+
+  status-bar a.current-path {
+    color: @dark-text-bold;
+  }
+}
+
+/*
+ * Terminal customizations
+ */
+
+.platformio-ide-terminal.terminal-view {
+  /* Reduce line height */
+  .xterm > .terminal > div {
+    line-height: 1.25em;
+  }
+
+  /* ... */
+  & {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > .input-block {
+    order: 10;
+  }
+
+  > .input-block,
+  > .input-block > .btn-toolbar {
+    padding: 2px !important;
+  }
+
+  > .input-block > .btn-toolbar:not(:hover) {
+    opacity: 0.1;
+    transition: opacity 150ms linear;
+  }
+
+  .btn-group,
+  .btn {
+    background: transparent;
+    border: 0 !important;
+    box-shadow: none;
+  }
+}
+
+/*
+ * Terminal tweaks
+ */
+
+.theme-one-dark-ui .platformio-ide-terminal.terminal-view,
+.theme-one-light-ui .platformio-ide-terminal.terminal-view {
+  border-top: solid 1px #0006;
+}
+
+.platformio-ide-terminal.terminal-view {
+  /* Remove 'insert text' button' */
+  button.btn.icon-keyboard {
+    display: none;
+  }
+
+  .standard,
+  .input-block {
+    background: #181923;
+  }
+}
+
+/*
+ * Light theme
+ */
+
+.theme-one-light-ui .platformio-ide-terminal.terminal-view {
+  .standard,
+  .input-block {
+    background: #fafbfc;
+    color: #333;
+  }
+
+  & {
+    border-top: solid 1px #8882;
+  }
+
+  .input-block:not(:hover) > * {
+    opacity: 0.3;
+  }
+
+  .terminal-cursor {
+    background: #3a88;
+  }
+}
+
+/*
+ * Aesthetic UI tweaks
+ */
+
+.theme-aesthetic-ui {
+  // The panel has some weird shadows, let's get rid of that
+  atom-panel,
+  .tool-panel {
+    text-shadow: none !important;
+  }
+}
+
+/*
+ * Borland mode!
+ */
+
+atom-workspace.theme-turbo-c-syntax.theme-one-dark-ui {
+  &,
+  atom-panel,
+  .atom-dock-mask,
+  .tool-panel,
+  .panel,
+  .status-bar,
+  atom-dock .tab.active,
+  .tab-bar,
+  .tab-bar .tab:not(.active) {
+    background: darken(@syntax-background-color, 3%) !important;
+  }
+}
+
+/* Hide "add new terminal" icon in status bar */
+.platformio-ide-terminal.status-bar {
+  margin-left: 0;
+  margin-right: 0;
+}
+.platformio-ide-terminal.status-bar .icon-x,
+.platformio-ide-terminal.status-bar .icon-plus {
+  display: none;
 }
