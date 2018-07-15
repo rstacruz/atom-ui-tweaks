@@ -1,0 +1,17 @@
+{
+  "name": "one-ui-tweaks",
+  "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
+  "main": "./lib/one-ui-tweaks",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "one-ui-tweaks:toggle"
+  },
+  "repository": "https://github.com/atom/one-ui-tweaks",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
