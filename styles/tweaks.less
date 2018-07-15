@@ -1,0 +1,55 @@
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+@import 'ui-variables';
+
+/* One-line ctrl+p */
+.one-ui-tweaks--all,
+.one-ui-tweaks--one-line-ctrl-p {
+  .FuzzyFinderResult {
+    & {
+      overflow: hidden;
+    }
+
+    & > .primary-line {
+      float: right;
+      position: static;
+      color: #ccc;
+    }
+
+    & > .primary-line::before {
+      margin-right: 0;
+      margin-left: 8px !important;
+      position: absolute;
+      left: 3px;
+      top: 8px;
+    }
+
+    & > .secondary-line {
+      float: left;
+      opacity: 1;
+    }
+  }
+}
+
+/* Hide "utf-8" */
+.one-ui-tweaks--all,
+.one-ui-tweaks--hide-encoding-status {
+  .status-bar .encoding-status {
+    display: none;
+  }
+}
+
+/* Hide "CR/LF" */
+.one-ui-tweaks--all,
+.one-ui-tweaks--hide-line-ending-status {
+  .status-bar a.line-ending-tile {
+    display: none;
+  }
+}
+
+/* Hide "N/I" */
+.one-ui-tweaks--all,
+.one-ui-tweaks--hide-vim-mode-plus-status {
+  .status-bar #status-bar-vim-mode-plus {
+    display: none;
+  }
+}
