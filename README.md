@@ -1,3 +1,3 @@
-# one-ui-tweaks
+# atom-ui-tweaks
 
-> Tweaks for atom-one-dark-ui and atom-one-light-ui
+> Various tweaks for Atom editor

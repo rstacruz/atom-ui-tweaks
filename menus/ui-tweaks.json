@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle one-ui-tweaks",
-        "command": "one-ui-tweaks:toggle"
+        "label": "About atom-ui-tweaks",
+        "command": "atom-ui-tweaks:about"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "one-ui-tweaks",
+          "label": "atom-ui-tweaks",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "one-ui-tweaks:toggle"
+              "label": "About",
+              "command": "atom-ui-tweaks:about"
             }
           ]
         }
