@@ -44,19 +44,9 @@
     opacity: 1;
   }
 
-  /* Extra padding on top */
-  atom-text-editor.vim-mode-plus:not(.mini) {
-    padding-top: 16px;
-  }
-
   /* Increase height of atom-notes */
   .select-list ol.list-group {
     max-height: 80vh;
-  }
-
-  /* Bold status bar filename */
-  status-bar a.current-path {
-    font-weight: bold;
   }
 
   /* No border */
@@ -171,10 +161,6 @@ atom-workspace.theme-one-dark-ui {
   .line-number.foldable:not(.cursor-line) {
     opacity: 0.5;
   }
-
-  status-bar a.current-path {
-    color: @dark-text-bold;
-  }
 }
 
 /*
@@ -269,24 +255,6 @@ atom-workspace.theme-one-dark-ui {
   atom-panel,
   .tool-panel {
     text-shadow: none !important;
-  }
-}
-
-/*
- * Borland mode!
- */
-
-atom-workspace.theme-turbo-c-syntax.theme-one-dark-ui {
-  &,
-  atom-panel,
-  .atom-dock-mask,
-  .tool-panel,
-  .panel,
-  .status-bar,
-  atom-dock .tab.active,
-  .tab-bar,
-  .tab-bar .tab:not(.active) {
-    background: darken(@syntax-background-color, 3%) !important;
   }
 }
 

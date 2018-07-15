@@ -1,8 +1,10 @@
 @import 'ui-variables';
 @import 'syntax-variables';
 
+@dark-text-bold: #fff;
+
 /* One-line ctrl+p */
-.one-ui-tweaks--one-line-ctrl-p {
+.one-ui-tweaks--ui--compact-fuzzy-finder {
   .FuzzyFinderResult {
     & {
       overflow: hidden;
@@ -50,10 +52,7 @@
   }
 }
 
-/*
- * stealth indent guides (indent-guide-improved)
- */
-
+/* Stealth indent guides (indent-guide-improved) */
 .one-ui-tweaks--stealth-indent-guides {
   .indent-guide-improved {
     background-color: transparent;
@@ -72,11 +71,47 @@
 }
 
 /* Status bar on top (lol) */
-.one-ui-tweaks--status-bar-position-top {
+.one-ui-tweaks--status--bar-position-top {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     atom-panel-container.footer {
       order: -1;
+    }
+  }
+}
+
+/* Extra padding on top */
+.one-ui-tweaks--editor--top-padding-16px {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-text-editor.vim-mode-plus:not(.mini) {
+      padding-top: 16px;
+    }
+  }
+}
+
+/* Extra padding on top */
+.one-ui-tweaks--editor--top-padding-32px {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-text-editor.vim-mode-plus:not(.mini) {
+      padding-top: 32px;
+    }
+  }
+}
+
+/* Bold status bar filename */
+.one-ui-tweaks--status--bold-file-name {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    status-bar a.current-path {
+      font-weight: bold;
+    }
+  }
+
+  &.theme-one-dark-ui {
+    status-bar a.current-path {
+      color: @dark-text-bold;
     }
   }
 }
