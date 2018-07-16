@@ -35,14 +35,17 @@
       border-bottom: none;
     }
 
-    /* Tab bar for the project pane */
+    /* Bottom tab bar for the project pane (Next!) */
     atom-dock .tab-bar {
       order: 100;
-      opacity: 0;
+      opacity: 0.5;
+      transform: translate3d(0, 48px, 0);
+      transition: opacity 150ms linear, transform 150ms ease-out;
     }
 
     atom-dock:hover .tab-bar {
       opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
 
     /* Increase height of atom-notes */
@@ -60,7 +63,7 @@
       display: none;
     }
 
-    /* Smaller line numbers */
+    /* Smaller line numbers (Next!) */
     .line-number:not(.cursor-line) {
       opacity: 0.3;
       transform: scale(0.7);
@@ -165,58 +168,10 @@
   }
 
   /*
-   * Terminal customizations
-   */
-
-  .platformio-ide-terminal.terminal-view {
-    /* Reduce line height */
-    .xterm > .terminal > div {
-      line-height: 1.25em;
-    }
-
-    /* ... */
-    & {
-      display: flex;
-      flex-direction: column;
-    }
-
-    > .input-block {
-      order: 10;
-    }
-
-    > .input-block,
-    > .input-block > .btn-toolbar {
-      padding: 2px !important;
-    }
-
-    > .input-block > .btn-toolbar:not(:hover) {
-      opacity: 0.1;
-      transition: opacity 150ms linear;
-    }
-
-    .btn-group,
-    .btn {
-      background: transparent;
-      border: 0 !important;
-      box-shadow: none;
-    }
-  }
-
-  /*
    * Terminal tweaks
    */
 
-  &.theme-one-dark-ui .platformio-ide-terminal.terminal-view,
-  &.theme-one-light-ui .platformio-ide-terminal.terminal-view {
-    border-top: solid 1px #0006;
-  }
-
   .platformio-ide-terminal.terminal-view {
-    /* Remove 'insert text' button' */
-    button.btn.icon-keyboard {
-      display: none;
-    }
-
     .standard,
     .input-block {
       background: #181923;
@@ -234,6 +189,7 @@
       color: #333;
     }
 
+    /* Next! */
     & {
       border-top: solid 1px #8882;
     }
@@ -241,9 +197,21 @@
     .input-block:not(:hover) > * {
       opacity: 0.3;
     }
+  }
 
+  /* Teal cursor (Next!) */
+  .platformio-ide-terminal.terminal-view {
     .terminal-cursor {
+      border-radius: 1px;
       background: #3a88;
+    }
+  }
+
+  /* Gray cursor (Next!) */
+  .platformio-ide-terminal.terminal-view {
+    .terminal-cursor {
+      border-radius: 1px;
+      background: #60708088;
     }
   }
 
@@ -257,27 +225,5 @@
     .tool-panel {
       text-shadow: none !important;
     }
-  }
-}
-
-/* Hide "add new terminal" icon in status bar */
-.atom-ui-tweaks--terminal--hide-add-new-terminal-button {
-  .platformio-ide-terminal.status-bar .icon-plus {
-    display: none;
-  }
-}
-
-/* Hide "Close terminal" icon in status bar */
-.atom-ui-tweaks--terminal--hide-close-terminal-button {
-  .platformio-ide-terminal.status-bar .icon-x {
-    display: none;
-  }
-}
-
-/* When both tweaks above are active */
-.atom-ui-tweaks--terminal--hide-add-new-terminal-button.atom-ui-tweaks--terminal--hide-close-terminal-button {
-  .platformio-ide-terminal.status-bar {
-    margin-left: 0;
-    margin-right: 0;
   }
 }

@@ -81,7 +81,7 @@
 }
 
 /* Extra padding on top */
-.atom-ui-tweaks--editor--top-padding-16px {
+.atom-ui-tweaks--editor--top-padding--16px {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     atom-text-editor.vim-mode-plus:not(.mini) {
@@ -91,7 +91,7 @@
 }
 
 /* Extra padding on top */
-.atom-ui-tweaks--editor--top-padding-32px {
+.atom-ui-tweaks--editor--top-padding--32px {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     atom-text-editor.vim-mode-plus:not(.mini) {
@@ -136,5 +136,83 @@
 
   .tree-view .css3-icon::before {
     font-size: 11px;
+  }
+}
+
+/* Hide "add new terminal" icon in status bar */
+.atom-ui-tweaks--terminal--hide-add-new-terminal-button {
+  .platformio-ide-terminal.status-bar .icon-plus {
+    display: none;
+  }
+}
+
+/* Hide "Close terminal" icon in status bar */
+.atom-ui-tweaks--terminal--hide-close-terminal-button {
+  .platformio-ide-terminal.status-bar .icon-x {
+    display: none;
+  }
+}
+
+/* When both tweaks above are active */
+.atom-ui-tweaks--terminal--hide-add-new-terminal-button.atom-ui-tweaks--terminal--hide-close-terminal-button {
+  .platformio-ide-terminal.status-bar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Reduce line height */
+.atom-ui-tweaks--terminal--line-height--125em {
+  .platformio-ide-terminal.terminal-view {
+    .xterm > .terminal > div {
+      line-height: 1.25em;
+    }
+  }
+}
+
+/* Stealth toolbar */
+.atom-ui-tweaks--terminal--stealth-toolbar {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .platformio-ide-terminal.terminal-view {
+      border-top: solid 1px #0006;
+    }
+  }
+
+  .platformio-ide-terminal.terminal-view {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+
+    > .input-block {
+      order: 10;
+    }
+
+    > .input-block,
+    > .input-block > .btn-toolbar {
+      padding: 2px !important;
+    }
+
+    > .input-block > .btn-toolbar:not(:hover) {
+      opacity: 0.1;
+      transition: opacity 150ms linear;
+    }
+
+    .btn-group,
+    .btn {
+      background: transparent;
+      border: 0 !important;
+      box-shadow: none;
+    }
+  }
+}
+
+/* Remove 'insert text' button' */
+.atom-ui-tweaks--terminal--hide-insert-text-button {
+  .platformio-ide-terminal.terminal-view {
+    button.btn.icon-keyboard {
+      display: none;
+    }
   }
 }
