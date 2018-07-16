@@ -18,5 +18,9 @@
   "devDependencies": {
     "prettier-eslint-cli": "4.7.1",
     "standard": "11.0.1"
-  }
+  },
+  "files": [
+    "lib",
+    "styles"
+  ]
 }
