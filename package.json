@@ -8,7 +8,9 @@
   "repository": "https://github.com/rstacruz/atom-ui-tweaks",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "prettier:fix": "prettier-eslint --write 'lib/**/*.js'",
+    "prettier:check": "prettier-eslint --list-different 'lib/**/*.js'"
   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
