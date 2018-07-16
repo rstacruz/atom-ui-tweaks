@@ -258,14 +258,26 @@
       text-shadow: none !important;
     }
   }
+}
 
-  /* Hide "add new terminal" icon in status bar */
+/* Hide "add new terminal" icon in status bar */
+.atom-ui-tweaks--terminal--hide-add-new-terminal-button {
+  .platformio-ide-terminal.status-bar .icon-plus {
+    display: none;
+  }
+}
+
+/* Hide "Close terminal" icon in status bar */
+.atom-ui-tweaks--terminal--hide-close-terminal-button {
+  .platformio-ide-terminal.status-bar .icon-x {
+    display: none;
+  }
+}
+
+/* When both tweaks above are active */
+.atom-ui-tweaks--terminal--hide-add-new-terminal-button.atom-ui-tweaks--terminal--hide-close-terminal-button {
   .platformio-ide-terminal.status-bar {
     margin-left: 0;
     margin-right: 0;
-  }
-  .platformio-ide-terminal.status-bar .icon-x,
-  .platformio-ide-terminal.status-bar .icon-plus {
-    display: none;
   }
 }
