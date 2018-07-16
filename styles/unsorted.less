@@ -35,19 +35,6 @@
       border-bottom: none;
     }
 
-    /* Bottom tab bar for the project pane (Next!) */
-    atom-dock .tab-bar {
-      order: 100;
-      opacity: 0.5;
-      transform: translate3d(0, 48px, 0);
-      transition: opacity 150ms linear, transform 150ms ease-out;
-    }
-
-    atom-dock:hover .tab-bar {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-
     /* Increase height of atom-notes */
     .select-list ol.list-group {
       max-height: 80vh;
@@ -229,19 +216,6 @@
     .terminal-cursor {
       border-radius: 1px;
       background: #60708088;
-    }
-  }
-
-  /*
-   * Aesthetic UI tweaks
-   */
-
-  &.theme-aesthetic-ui {
-    // The panel has some weird shadows, let's get rid of that
-    atom-panel,
-    .tool-panel {
-      text-shadow: none !important;
-      font-weight: bold;
     }
   }
 }

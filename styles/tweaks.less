@@ -216,3 +216,42 @@
     }
   }
 }
+
+/* Bottom tab bar for the project pane */
+.atom-ui-tweaks--tree--tab-bar-position--bottom {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-dock .tab-bar {
+      order: 100;
+    }
+  }
+}
+
+.atom-ui-tweaks--tree--auto-hide-tab-bar {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-dock .tab-bar {
+      opacity: 0.5;
+      transform: translate3d(0, -48px, 0);
+      transition: opacity 150ms linear, transform 150ms ease-out;
+    }
+
+    atom-dock:hover .tab-bar {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.atom-ui-tweaks--tree--tab-bar-position--bottom.atom-ui-tweaks--tree--auto-hide-tab-bar {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-dock .tab-bar {
+      transform: translate3d(0, 48px, 0);
+    }
+
+    atom-dock:hover .tab-bar {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
