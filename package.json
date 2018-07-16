@@ -7,8 +7,13 @@
   "keywords": [],
   "repository": "https://github.com/rstacruz/atom-ui-tweaks",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint lib"
+  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "standard": "11.0.1"
+  }
 }
