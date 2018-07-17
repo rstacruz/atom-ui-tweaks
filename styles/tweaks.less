@@ -2,6 +2,7 @@
 @import 'syntax-variables';
 
 @dark-text-bold: #fff;
+@light-text-bold: #111;
 
 /* One-line ctrl+p */
 .atom-ui-tweaks--ui--compact-fuzzy-finder {
@@ -106,12 +107,19 @@
   &.theme-one-light-ui {
     status-bar a.current-path {
       font-weight: bold;
+      font-size: 1.1em;
     }
   }
 
   &.theme-one-dark-ui {
     status-bar a.current-path {
       color: @dark-text-bold;
+    }
+  }
+
+  &.theme-one-light-ui {
+    status-bar a.current-path {
+      color: @light-text-bold;
     }
   }
 }
