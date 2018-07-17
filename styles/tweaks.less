@@ -376,6 +376,11 @@
     .tab {
       border-left: 0;
     }
+
+    /* Remove line after the last */
+    .tab-bar .tab:last-of-type {
+      box-shadow: inset 0 -1px @tab-border-color;
+    }
   }
 }
 
@@ -383,12 +388,17 @@
 .atom-ui-tweaks--tab--separator-style--slight {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
-    .tab {
+    .tab-bar .tab {
       border-left: 0;
       position: relative;
     }
 
-    .tab:not(:first-child)::before {
+    /* Remove line after the last */
+    .tab-bar .tab:last-of-type {
+      box-shadow: inset 0 -1px @tab-border-color;
+    }
+
+    .tab-bar .tab:not(:first-child)::before {
       content: '';
       display: block;
       position: absolute;
@@ -403,7 +413,7 @@
       );
     }
 
-    .tab.active::before {
+    .tab-bar .tab.active::before {
       display: none;
     }
   }
