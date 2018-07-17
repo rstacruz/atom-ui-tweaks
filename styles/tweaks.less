@@ -414,8 +414,8 @@
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     .tab.active {
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
     }
   }
 }
@@ -425,8 +425,8 @@
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     .tab.active {
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
     }
   }
 }
@@ -445,6 +445,56 @@
   &.theme-one-light-ui {
     .tab-bar .tab:first-child {
       margin-left: 16px;
+    }
+  }
+}
+
+.atom-ui-tweaks--terminal--reduce-separator-line-intensity {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .platformio-ide-terminal.terminal-view {
+      border-top: solid 1px @tab-border-color !important;
+    }
+  }
+}
+
+.atom-ui-tweaks--editor--line-number-style--stealth {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    /* Smaller line numbers */
+    .line-number:not(.cursor-line) {
+      opacity: 0.3;
+      transform: scale(0.7);
+    }
+
+    /* Line numbers of foldable areas */
+    .line-number.foldable {
+      opacity: 0.8;
+    }
+
+    /* Increased visibility of folds */
+    .line-number.folded:not(.cursor-line) {
+      opacity: 1;
+      background: @background-color-highlight;
+      border-radius: 3px;
+    }
+  }
+
+  &.theme-one-light-ui {
+    /* Line numbers of foldable areas */
+    .line-number.foldable {
+      opacity: 1;
+    }
+  }
+
+  &.theme-one-dark-ui {
+    /* Line numbers: opacity */
+    .line-number:not(.cursor-line) {
+      opacity: 0.1;
+    }
+
+    .line-number.foldable:not(.cursor-line) {
+      opacity: 0.5;
     }
   }
 }
