@@ -302,3 +302,54 @@
     }
   }
 }
+
+/* Stealthier status bar */
+.atom-ui-tweaks--status--inactive-opacity--60 {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .status-bar .status-bar-right,
+    .status-bar .status-bar-left > *:not(.file-info) {
+      opacity: 0.6;
+      transition: opacity 150ms linear;
+    }
+
+    .status-bar:hover .status-bar-right,
+    .status-bar:hover .status-bar-left > *:not(.file-info) {
+      opacity: 1;
+    }
+  }
+}
+
+/* Stealthier status bar */
+.atom-ui-tweaks--status--inactive-opacity--20 {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .status-bar .status-bar-right,
+    .status-bar .status-bar-left > *:not(.file-info) {
+      opacity: 0.2;
+      transition: opacity 150ms linear;
+    }
+
+    .status-bar:hover .status-bar-right,
+    .status-bar:hover .status-bar-left > *:not(.file-info) {
+      opacity: 1;
+    }
+  }
+}
+
+/* Stealthier status bar */
+.atom-ui-tweaks--status--inactive-opacity--0 {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .status-bar .status-bar-right,
+    .status-bar .status-bar-left > *:not(.file-info) {
+      opacity: 0;
+      transition: opacity 150ms linear;
+    }
+
+    .status-bar:hover .status-bar-right,
+    .status-bar:hover .status-bar-left > *:not(.file-info) {
+      opacity: 1;
+    }
+  }
+}
