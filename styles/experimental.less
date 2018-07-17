@@ -1,0 +1,26 @@
+/* Fake trafic lights */
+.atom-ui-tweaks--other--fake-traffic-lights {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    .status-bar-left::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -1px;
+      width: 10px;
+      height: 10px;
+      background: #d63031;
+      border-radius: 50%;
+      box-shadow: 24px 0 0 #fdcb6e, 48px 0 0 #00b894;
+      margin-left: 12px;
+      margin-right: 48px;
+    }
+
+    status-bar a.current-path {
+      font-size: 1.1em;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
