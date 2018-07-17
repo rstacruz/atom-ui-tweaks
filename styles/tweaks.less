@@ -353,3 +353,14 @@
     }
   }
 }
+
+/* Hide vertical separator */
+.atom-ui-tweaks--ui--hide-pane-separators {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-pane-container atom-pane {
+      border-right: none;
+      border-bottom: none;
+    }
+  }
+}
