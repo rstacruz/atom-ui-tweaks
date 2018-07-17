@@ -449,7 +449,13 @@
   }
 }
 
-.atom-ui-tweaks--terminal--reduce-separator-line-intensity {
+/*
+ * Change the color of the separator. Has to happen for the syntax-adaptive
+ * tweak too
+ */
+
+.atom-ui-tweaks--terminal--reduce-separator-line-intensity,
+.atom-ui-tweaks--terminal--syntax-adaptive-background-color {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     .platformio-ide-terminal.terminal-view {
@@ -495,6 +501,28 @@
 
     .line-number.foldable:not(.cursor-line) {
       opacity: 0.5;
+    }
+  }
+}
+
+.atom-ui-tweaks--terminal--syntax-adaptive-background-color {
+  &.theme-one-dark-ui {
+    .platformio-ide-terminal.terminal-view {
+      .standard,
+      .input-block {
+        background: darken(@syntax-background-color, 5%);
+        color: @syntax-text-color;
+      }
+    }
+  }
+
+  &.theme-one-light-ui {
+    .platformio-ide-terminal.terminal-view {
+      .standard,
+      .input-block {
+        background: lighten(@syntax-background-color, 5%);
+        color: @syntax-text-color;
+      }
     }
   }
 }
