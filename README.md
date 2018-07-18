@@ -2,7 +2,7 @@
 
 > Prettify your Atom editor UI with these sleek tweaks
 
-Pimp your Atom editor with these tweaks that make your Atom editor look more sleek and minimal. :heart:
+Pimp your Atom editor with these tweaks that make Atom look more sleek and minimal. :heart:
 
 ## Installation
 
