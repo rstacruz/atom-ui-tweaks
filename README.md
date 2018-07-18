@@ -1,14 +1,18 @@
 # atom-ui-tweaks
 
-> Various tweaks for Atom editor
+> Adjust your Atom editor UI with these sleek tweaks
 
-A grab-bag collection of tweaks to make your Atom editor look more sleek and minimal. :heart:
+Pimp your Atom editor with these tweaks that make your Atom editor look more sleek and minimal. :heart:
 
 ## Installation
 
 ```bash
 apm install rstacruz/atom-ui-tweaks
 ```
+
+## Screenshots
+
+> ![](docs/settings-1.png) <br> ![](docs/settings-2.png) <br> ![](docs/settings-3.png) <br> ![](docs/settings-4.png)
 
 ## Examples
 
@@ -27,3 +31,18 @@ apm install rstacruz/atom-ui-tweaks
 **Terminal: stealth toolbar** _(below)_ makes the terminal toolbar blend in with the rest of the terminal, making terminals feel more integrated into Atom. (Also shown: _hide insert text button_)
 
 ![](docs/minimal-terminal.png)
+
+## Thanks
+
+**atom-ui-tweaks** © 2018+, Rico Sta. Cruz. Released under the [MIT] License.<br>
+Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
+
+> [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
+> GitHub [@rstacruz](https://github.com/rstacruz) &nbsp;&middot;&nbsp;
+> Twitter [@rstacruz](https://twitter.com/rstacruz)
+
+[![](https://img.shields.io/github/followers/rstacruz.svg?style=social&label=@rstacruz)](https://github.com/rstacruz) &nbsp;
+[![](https://img.shields.io/twitter/follow/rstacruz.svg?style=social&label=@rstacruz)](https://twitter.com/rstacruz)
+
+[mit]: http://mit-license.org/
+[contributors]: http://github.com/rstacruz/atom-ui-tweaks/contributors
