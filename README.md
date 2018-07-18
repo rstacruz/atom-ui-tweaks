@@ -1,6 +1,6 @@
 # atom-ui-tweaks
 
-> Adjust your Atom editor UI with these sleek tweaks
+> Prettify your Atom editor UI with these sleek tweaks
 
 Pimp your Atom editor with these tweaks that make your Atom editor look more sleek and minimal. :heart:
 

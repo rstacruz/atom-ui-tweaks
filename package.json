@@ -3,8 +3,12 @@
   "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
   "main": "./lib/ui-tweaks",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "description": "Prettify your Atom editor UI with these sleek tweaks",
+  "keywords": [
+    "ui",
+    "status on top",
+    "extra padding"
+  ],
   "repository": "https://github.com/rstacruz/atom-ui-tweaks",
   "license": "MIT",
   "scripts": {
