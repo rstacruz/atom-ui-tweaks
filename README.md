@@ -34,6 +34,12 @@ apm install atom-ui-tweaks
 
 ![](docs/minimal-terminal.png)
 
+Here are screenshots with titlebars from the Vimix GTK theme (some extra CSS tweaks to make them integrate better):
+
+![](docs/vimix-dark.png)
+
+![](docs/vimix-light.png)
+
 ## Thanks
 
 **atom-ui-tweaks** © 2018+, Rico Sta. Cruz. Released under the [MIT] License.<br>
