@@ -6,8 +6,10 @@ Pimp your Atom editor with these tweaks that make your Atom editor look more sle
 
 ## Installation
 
+Install [atom-ui-tweaks](http://atom.io/packages/atom-ui-tweaks) via apm, or Atom's package settings.
+
 ```bash
-apm install rstacruz/atom-ui-tweaks
+apm install atom-ui-tweaks
 ```
 
 ## Screenshots
