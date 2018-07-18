@@ -6,28 +6,45 @@
 
 /* One-line ctrl+p */
 .atom-ui-tweaks--ui--compact-fuzzy-finder {
-  .FuzzyFinderResult {
-    & {
-      overflow: hidden;
-    }
+  &.theme-one-light-ui,
+  &.theme-one-dark-ui {
+    .FuzzyFinderResult {
+      & {
+        overflow: hidden;
+      }
 
+      & > .primary-line {
+        float: right;
+        position: static;
+        color: lighten(@syntax-selection-color, 10%);
+      }
+
+      &.selected > .primary-line {
+        color: lighten(@syntax-selection-color, 30%);
+      }
+
+      & > .primary-line::before {
+        margin-right: 0;
+        margin-left: 8px !important;
+        position: absolute;
+        left: 3px;
+        top: 8px;
+      }
+
+      & > .secondary-line {
+        float: left;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.theme-one-light-ui {
     & > .primary-line {
-      float: right;
-      position: static;
-      color: #ccc;
+      color: @text-color-subtle;
     }
 
-    & > .primary-line::before {
-      margin-right: 0;
-      margin-left: 8px !important;
-      position: absolute;
-      left: 3px;
-      top: 8px;
-    }
-
-    & > .secondary-line {
-      float: left;
-      opacity: 1;
+    &.selected > .primary-line {
+      color: @text-color;
     }
   }
 }
