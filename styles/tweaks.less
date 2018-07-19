@@ -286,8 +286,9 @@
 .atom-ui-tweaks--status--extra-padding {
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
-    atom-panel-container.footer {
-      padding: 4px;
+    .status-bar {
+      border: solid 4px transparent;
+      box-sizing: content-box;
     }
 
     .status-bar .status-bar-left > * {
