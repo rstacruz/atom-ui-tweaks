@@ -30,7 +30,7 @@
 /*
  * Subtle indicator that staging tweaks is on
  */
- 
+
 .atom-ui-tweaks--other--enable-staging-tweaks {
   status-bar a.current-path::after {
     content: '';
@@ -42,57 +42,6 @@
     margin-left: 8px;
     vertical-align: middle;
     margin-top: -3px;
-  }
-}
-
-/*
- * editor.cursorLineStyle: none
- */
-
-.atom-ui-tweaks--other--enable-staging-tweaks {
-  atom-text-editor .line.cursor-line {
-    background: transparent !important;
-  }
-}
-
-/*
- * editor.cursorLineStyle: highlightText
- */
-
-.highlight-line when (lightness(@syntax-background-color) >= 50%) {
-  background: transparent !important;
-  filter: brightness(0.7);
-}
-
-.highlight-line when (lightness(@syntax-background-color) < 50%) {
-  background: transparent !important;
-  filter: brightness(1.3);
-}
-
-.atom-ui-tweaks--other--enable-staging-tweaks {
-  atom-text-editor .line.cursor-line,
-  atom-text-editor .line-number.cursor-line {
-    .highlight-line();
-  }
-}
-
-/*
- * editor.forceCommentFontStyle: normal
- */
-
-.atom-ui-tweaks--other--enable-staging-tweaks {
-  .syntax--comment {
-    font-style: normal !important;
-  }
-}
-
-/*
- * editor.forceCommentFontStyle: italic
- */
-
-.atom-ui-tweaks--other--enable-staging-tweaks {
-  .syntax--comment {
-    font-style: italic !important;
   }
 }
 
