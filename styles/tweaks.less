@@ -575,3 +575,33 @@
     }
   }
 }
+
+/*
+ * Disable animation in modal fade in
+ * modal.disableAnimation
+ */
+
+.atom-ui-tweaks--modal--disable-animation {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-panel.modal:after {
+      -webkit-animation: none;
+      animation: none;
+    }
+  }
+}
+
+/*
+ * Simpler modal backdrop
+ * modal.simplifyBackdrop
+ */
+
+.atom-ui-tweaks--modal--simplify-backdrop {
+  &.theme-one-dark-ui,
+  &.theme-one-light-ui {
+    atom-panel.modal:after {
+      background: darken(@syntax-background-color, 5%);
+      opacity: 0.7;
+    }
+  }
+}
