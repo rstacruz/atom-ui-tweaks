@@ -601,8 +601,12 @@
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
     atom-panel.modal:after {
-      background: darken(@syntax-background-color, 5%);
-      opacity: 0.7;
+      background: linear-gradient(
+        to bottom,
+        fade(darken(@syntax-background-color, 0%), 20%) 40px,
+        fade(darken(@syntax-background-color, 0%), 90%) 60px
+      );
+      opacity: 1;
     }
   }
 }
