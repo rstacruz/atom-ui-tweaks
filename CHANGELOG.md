@@ -6,13 +6,19 @@
 
 These new pretty tweaks have been added:
 
+- **UI: Atom logo splash screen** &mdash; makes your no-editor view pretty.
+
+  > ![](docs/splash-screen.png)
+
+- **Editor: Cursor line style** &mdash; disable the highlight on the current line, or restyle how it looks like.
+
+  > ![](docs/cursor-line-brighten.gif)
+
 - **Modal: Simplify backdrop** &mdash; fade the editor out when a modal is open.
 
 - **Modal: Disable animation** &mdash; remove the fade-in animation of modal dialog overlays.
 
 - **Editor: Comment font style** &mdash; force italic comments, regardless of syntax theme.
-
-- **Editor: Cursor line style** &mdash; disable the highlight on the current line, or restyle how it looks like.
 
 ### :sparkles: New features
 
