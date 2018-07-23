@@ -8,11 +8,11 @@ These new pretty tweaks have been added:
 
 - **UI: Atom logo splash screen** &mdash; makes your no-editor view pretty.
 
-  > ![](docs/splash-screen.png)
+  > <img src='docs/splash-screen.png' width='300'>
 
 - **Editor: Cursor line style** &mdash; disable the highlight on the current line, or restyle how it looks like.
 
-  > ![](docs/cursor-line-brighten.gif)
+  > <img src='docs/cursor-line-brighten.gif' width='300'>
 
 - **Modal: Simplify backdrop** &mdash; fade the editor out when a modal is open.
 
