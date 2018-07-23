@@ -18,6 +18,14 @@ apm install atom-ui-tweaks
 
 ## Examples
 
+**Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. _(New in v0.2.0)_
+
+![](docs/splash-screen.png)
+
+**Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is _brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
+
+![](docs/cursor-line-brighten.gif)
+
 **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
 
 ![](docs/line-numbers.gif)

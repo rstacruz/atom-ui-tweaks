@@ -20,6 +20,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "8.2.6",
     "prettier-eslint-cli": "4.7.1",
     "standard": "11.0.1"
   },
