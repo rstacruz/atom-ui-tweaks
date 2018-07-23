@@ -20,33 +20,31 @@ apm install atom-ui-tweaks
 
 **Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. _(New in v0.2.0)_
 
-> ![](docs/splash-screen.png)
+> <img src='docs/splash-screen.png' width='400'>
 
 **Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is _brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
 
-> ![](docs/cursor-line-brighten.gif)
+> <img src='docs/cursor-line-brighten.gif' width='400'>
 
 **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
 
-> ![](docs/line-numbers.gif)
+> <img src='docs/line-numbers.gif' width='400'>
 
 **Status on top** _(below)_ moves the statusbar on top. (Also shown: _Increase status bar padding_, _Bold filename_, _Fake traffic lights_)
 
-> ![](docs/status-on-top.png)
+> <img src='docs/status-on-top.png' width='400'>
 
 **Compact fuzzy finder** _(below)_ shows more lines in the Ctrl+P dialog by reducing each item to a single line.
 
-> ![](docs/one-line-fuzzy-finder.png)
+> <img src='docs/one-line-fuzzy-finder.png' width='400'>
 
 **Terminal: stealth toolbar** _(below)_ makes the terminal toolbar blend in with the rest of the terminal, making terminals feel more integrated into Atom. (Also shown: _hide insert text button_)
 
-> ![](docs/minimal-terminal.png)
+> <img src='docs/minimal-terminal.png' width='400'>
 
 Here are screenshots with titlebars from the Vimix GTK theme (some extra CSS tweaks to make them integrate better):
 
-> ![](docs/vimix-dark.png)
-
-> ![](docs/vimix-light.png)
+> <img src='docs/vimix-dark.png' height='200'><img src='docs/vimix-light.png' height='200'>
 
 ## Thanks
 
