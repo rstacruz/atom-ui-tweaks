@@ -14,9 +14,17 @@ apm install atom-ui-tweaks
 
 ## Screenshots
 
-> ![](docs/settings-1.png) <br> ![](docs/settings-2.png) <br> ![](docs/settings-3.png) <br> ![](docs/settings-4.png)
+**atom-ui-tweaks** provides a plethora of tweaks in its settings page. Here's an example:
 
-## Examples
+<blockquote>
+<img src='docs/settings-1.png' width='400'>
+<details>
+<summary>More screenshots</summary>
+<img src='docs/settings-2.png' width='400'><br>
+<img src='docs/settings-3.png' width='400'><br>
+<img src='docs/settings-4.png' width='400'>
+</details>
+</blockquote>
 
 **Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. _(New in v0.2.0)_
 
