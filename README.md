@@ -18,6 +18,10 @@ apm install atom-ui-tweaks
 
 ## Examples
 
+**Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. (Introduced v0.2.0)
+
+![](docs/splash-screen.png)
+
 **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
 
 ![](docs/line-numbers.gif)
