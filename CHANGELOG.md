@@ -1,3 +1,13 @@
+## [v0.3.0]
+
+> Unreleased
+
+### New features
+
+- Added `atom-ui-tweaks:open-settings` command to easily switch to the settings view.
+
+[v0.3.0]: https://github.com/rstacruz/atom-ui-tweaks/compare/v0.2.0...v0.3.0
+
 ## [v0.2.0]
 
 > Jul 23, 2018
