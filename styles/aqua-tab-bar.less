@@ -15,8 +15,10 @@
  * aquaTabBar.enable - Apple-like tab bar
  *
  * To do:
- *   - fix light-on-dark (and dark-on-light) themes
- *   - fix separators
+ *   - [x] fix light-on-dark (and dark-on-light) themes
+ *   - [ ] fix separators
+ *   - [ ] fix indicators in light themes
+ *   - [ ] make excess padding optional?
  */
 
 .atom-ui-tweaks--other--enable-staging-tweaks {
@@ -28,7 +30,7 @@
 
   &.theme-one-light-ui.theme-one-light-ui.theme-one-light-ui {
     .tab-bar .tab:not(.active) {
-        background: fade(white, 50%);
+      background: fade(white, 50%);
     }
   }
 
