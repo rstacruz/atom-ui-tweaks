@@ -68,6 +68,11 @@
       }
     }
   }
+
+  // Border below the tab bar
+  .item-views {
+    border-top: solid 1px @panel-heading-border-color;
+  }
 }
 
 /*
@@ -75,19 +80,18 @@
  */
 
 .atom-ui-tweaks--other--enable-staging-tweaks {
-  &.atom-ui-tweaks--status--extra-padding.atom-ui-tweaks--status--bar-position-top {
-    &.theme-one-dark-ui,
-    &.theme-one-light-ui {
-      .status-bar {
-        margin-bottom: -6px;
-      }
-    }
-  }
-
   &.theme-one-dark-ui,
   &.theme-one-light-ui {
-    .item-views {
-      border-top: solid 1px @panel-heading-border-color;
+    &.atom-ui-tweaks--status--bar-position--top {
+      .status-bar {
+        margin-bottom: -0.5 * @tab-padding;
+      }
+    }
+
+    &.atom-ui-tweaks--status--extra-padding.atom-ui-tweaks--status--bar-position--top {
+      .status-bar {
+        margin-bottom: -1 * @tab-padding;
+      }
     }
   }
 }
