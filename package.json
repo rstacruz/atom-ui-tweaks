@@ -2,7 +2,7 @@
   "name": "atom-ui-tweaks",
   "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
   "main": "./lib/index",
-  "version": "0.3.0",
+  "version": "0.2.0",
   "description": "Prettify your Atom editor UI with these sleek tweaks",
   "keywords": [
     "ui",
