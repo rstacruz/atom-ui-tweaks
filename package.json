@@ -1,8 +1,8 @@
 {
   "name": "atom-ui-tweaks",
   "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
-  "main": "./lib/ui-tweaks",
-  "version": "0.2.0",
+  "main": "./lib/index",
+  "version": "0.3.0",
   "description": "Prettify your Atom editor UI with these sleek tweaks",
   "keywords": [
     "ui",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "babel-eslint": "8.2.6",
+    "flow-bin": "^0.77.0",
     "prettier-eslint-cli": "4.7.1",
     "standard": "11.0.1"
   },
