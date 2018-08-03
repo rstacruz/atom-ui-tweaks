@@ -36,6 +36,14 @@ apm install atom-ui-tweaks
 
 > <img src='docs/cursor-line-brighten.gif' width='400'>
 
+:nail_care: **Tab bar style** _(below)_ lets you restyle the tab bar differently. _(New in v0.3.0)_
+
+> <img src='docs/aqua-tab-bar.png' width='400'>
+
+:mag: **Find in Project** _(below)_ tweaks will make the find in project dialog more readable. _(New in v0.3.0)_
+
+> <img src='docs/find-in-project-before.png' height='153'><img src='docs/find-in-project-after.png' height='153'>
+
 :hash: **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
 
 > <img src='docs/line-numbers.gif' width='400'>
