@@ -11,17 +11,8 @@
   background: fade(@syntax-background-color, 50%);
 }
 
-/*
- * aquaTabBar.enable - Apple-like tab bar
- *
- * To do:
- *   - [x] fix light-on-dark (and dark-on-light) themes
- *   - [ ] fix separators
- *   - [ ] fix indicators in light themes
- *   - [ ] make excess padding optional?
- */
-
-.atom-ui-tweaks--other--enable-staging-tweaks {
+/* tab.style: aqua */
+.atom-ui-tweaks--tab--style--aqua {
   &.theme-one-dark-ui.theme-one-dark-ui.theme-one-dark-ui {
     .tab-bar .tab:not(.active) {
       .aqua-tab-bar-background();
@@ -51,7 +42,7 @@
         border: solid @tab-padding transparent;
         border-right-width: @tab-padding * 8;
         border-left-width: @tab-padding * 8;
-        border-top-width: @tab-padding + 1px;
+        border-top-width: @tab-padding + 2px;
         box-sizing: content-box;
         box-shadow: none;
       }
@@ -123,7 +114,7 @@
     top: 5px;
     bottom: 5px;
     width: 1px;
-    opacity: 0.125;
+    opacity: 0.1;
     background: @syntax-text-color;
   }
 

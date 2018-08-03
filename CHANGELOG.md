@@ -8,6 +8,9 @@
 
 ## :nail_care: New tweaks
 
+- New **Tab** tweaks:
+  - Aqua style tabs
+
 - New **Find in Project** tweaks:
   - Improved header rows
   - Subtle match count
