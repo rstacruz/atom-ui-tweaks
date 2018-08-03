@@ -411,39 +411,44 @@
 
 /* tab.separatorStyle: slight */
 .atom-ui-tweaks--tab--separator-style--slight {
-  &.theme-one-dark-ui,
-  &.theme-one-light-ui {
-    .tab-bar .tab {
-      border-left: 0;
-      position: relative;
-    }
+  /* Disable this when aqua-style tab bars are on; it has its own separator style */
+  &:not(.atom-ui-tweaks--other--enable-staging-tweaks) {
+    &:not(.atom-ui-tweaks--tab--style--aqua) {
+      &.theme-one-dark-ui,
+      &.theme-one-light-ui {
+        .tab-bar .tab {
+          border-left: 0;
+          position: relative;
+        }
 
-    /* Remove line after the last */
-    .tab-bar .tab:last-of-type {
-      box-shadow: inset 0 -1px @tab-border-color;
-    }
+        /* Remove line after the last */
+        .tab-bar .tab:last-of-type {
+          box-shadow: inset 0 -1px @tab-border-color;
+        }
 
-    .tab-bar .tab.active:last-of-type {
-      box-shadow: none;
-    }
+        .tab-bar .tab.active:last-of-type {
+          box-shadow: none;
+        }
 
-    .tab-bar .tab:not(:first-child)::before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: linear-gradient(
-        to bottom,
-        transparent 20%,
-        @tab-border-color 70%
-      );
-    }
+        .tab-bar .tab:not(:first-child)::before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background: linear-gradient(
+            to bottom,
+            transparent 20%,
+            @tab-border-color 70%
+          );
+        }
 
-    .tab-bar .tab.active::before {
-      display: none;
+        .tab-bar .tab.active::before {
+          display: none;
+        }
+      }
     }
   }
 }
