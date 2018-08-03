@@ -1,7 +1,7 @@
 @import 'ui-variables';
 @import 'syntax-variables';
 
-@tab-padding: 6px;
+@tab-padding: 4px;
 
 .aqua-tab-bar-background() when (lightness(@syntax-background-color) > 50%) {
   background: fade(@syntax-background-color, 5%);
@@ -51,7 +51,7 @@
         border: solid @tab-padding transparent;
         border-right-width: @tab-padding * 8;
         border-left-width: @tab-padding * 8;
-        border-top-width: @tab-padding + 2px;
+        border-top-width: @tab-padding + 1px;
         box-sizing: content-box;
         box-shadow: none;
       }

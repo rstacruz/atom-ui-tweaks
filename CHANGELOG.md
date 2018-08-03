@@ -6,6 +6,15 @@
 
 - Added `atom-ui-tweaks:open-settings` command to easily switch to the settings view.
 
+## :nail_care: New tweaks
+
+- New **Find in Project** tweaks:
+  - Improved header rows
+  - Subtle match count
+  - Subtle highlights
+  - Subtle line numbers
+  - Subtle separators
+
 [v0.3.0]: https://github.com/rstacruz/atom-ui-tweaks/compare/v0.2.0...v0.3.0
 
 ## [v0.2.0]
