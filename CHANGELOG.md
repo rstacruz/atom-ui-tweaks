@@ -18,6 +18,10 @@
   - Subtle line numbers
   - Subtle separators
 
+> <img src='docs/aqua-tab-bar.png' width='300'>
+
+> <img src='docs/find-in-project-before.png' height='114'><img src='docs/find-in-project-after.png' height='114'>
+
 [v0.3.0]: https://github.com/rstacruz/atom-ui-tweaks/compare/v0.2.0...v0.3.0
 
 ## [v0.2.0]
