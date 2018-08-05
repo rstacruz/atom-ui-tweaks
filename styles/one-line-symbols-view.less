@@ -4,12 +4,14 @@
     .symbols-view .two-lines {
       & {
         overflow: hidden;
+        padding: 3px 10px;
       }
 
       & > .primary-line {
-        float: left;
+        white-space: nowrap;
+        display: inline;
         font-family: var(--editor-font-family);
-        position: static;
+        position: relative;
         color: lighten(@syntax-selection-color, 10%);
       }
 
@@ -18,8 +20,11 @@
       }
 
       & > .secondary-line {
-        float: right;
+        display: inline;
         opacity: 0.5;
+        font-size: 0.9em;
+        margin-left: 10px;
+        white-space: nowrap;
       }
     }
   }
