@@ -1,0 +1,26 @@
+.atom-ui-tweaks--ui--compact-symbols-view {
+  &.theme-one-light-ui,
+  &.theme-one-dark-ui {
+    .symbols-view .two-lines {
+      & {
+        overflow: hidden;
+      }
+
+      & > .primary-line {
+        float: left;
+        font-family: var(--editor-font-family);
+        position: static;
+        color: lighten(@syntax-selection-color, 10%);
+      }
+
+      &.selected > .primary-line {
+        color: lighten(@syntax-selection-color, 30%);
+      }
+
+      & > .secondary-line {
+        float: right;
+        opacity: 0.5;
+      }
+    }
+  }
+}
