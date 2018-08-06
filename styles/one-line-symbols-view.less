@@ -12,16 +12,21 @@
         display: inline;
         font-family: var(--editor-font-family);
         position: relative;
-        color: lighten(@syntax-selection-color, 10%);
+        color: @text-color;
       }
 
       &.selected > .primary-line {
-        color: lighten(@syntax-selection-color, 30%);
+        color: @text-color-selected;
       }
 
+      .character-match {
+        background: fade(@background-color-info, 5%);
+        color: @text-color-info;
+      }
+
+      // The line number or filename
       & > .secondary-line {
         display: inline;
-        opacity: 0.5;
         font-size: 0.9em;
         margin-left: 10px;
         white-space: nowrap;
