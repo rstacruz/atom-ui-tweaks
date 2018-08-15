@@ -14,6 +14,8 @@ Pimp your Atom editor with these tweaks that make Atom look more sleek and minim
 apm install atom-ui-tweaks
 ```
 
+Or Settings ➔ Packages ➔ Search for `atom-ui-tweaks`
+
 ## Screenshots
 
 **atom-ui-tweaks** provides a plethora of tweaks in its settings page. Here's an example:
@@ -32,11 +34,11 @@ apm install atom-ui-tweaks
 
 > <img src='docs/splash-screen.png' width='400'>
 
-:point_right: **Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is _brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
+:point*right: **Cursor line style** *(below)_ allows you to restyle the highlight on the current line. Shown here is \_brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
 
 > <img src='docs/cursor-line-brighten.gif' width='400'>
 
-:nail_care: **Tab bar style** _(below)_ lets you restyle the tab bar differently. _(New in v0.3.0)_
+:nail*care: **Tab bar style** *(below)_ lets you restyle the tab bar differently. _(New in v0.3.0)\_
 
 > <img src='docs/aqua-tab-bar.png' width='400'>
 
