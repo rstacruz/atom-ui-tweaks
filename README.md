@@ -36,35 +36,35 @@ Or Settings ➔ Packages ➔ Search for `atom-ui-tweaks`.
 </details>
 </blockquote>
 
-:sparkles: **Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. _(New in v0.2.0)_
+✨ **Atom logo splash screen** _(below)_ updates the look of the app when no editors are open. _(New in v0.2.0)_
 
 > <img src='docs/splash-screen.png' width='400'>
 
-:point_right: **Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is \_brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
+👉 **Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is _brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
 
 > <img src='docs/cursor-line-brighten.gif' width='400'>
 
-:nail*care: **Tab bar style** *(below)_ lets you restyle the tab bar differently. _(New in v0.3.0)\_
+💅 **Tab bar style** _(below)_ lets you restyle the tab bar differently. _(New in v0.3.0)_
 
 > <img src='docs/aqua-tab-bar.png' width='400'>
 
-:mag: **Find in Project** _(below)_ tweaks will make the find in project dialog more readable. _(New in v0.3.0)_
+🔍 **Find in Project** _(below)_ tweaks will make the find in project dialog more readable. _(New in v0.3.0)_
 
 > <img src='docs/find-in-project-before.png' height='153'><img src='docs/find-in-project-after.png' height='153'>
 
-:hash: **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
+#️⃣ **Small line numbers** _(below)_ tweak makes line numbers less prominent, but highlighting the fold points. **Simplified indent guides** will only show indent guides for the blocks that the cursor is in.
 
 > <img src='docs/line-numbers.gif' width='400'>
 
-:tophat: **Status on top** _(below)_ moves the statusbar on top. (Also shown: _Increase status bar padding_, _Bold filename_, _Fake traffic lights_)
+🎩 **Status on top** _(below)_ moves the statusbar on top. (Also shown: _Increase status bar padding_, _Bold filename_, _Fake traffic lights_)
 
 > <img src='docs/status-on-top.png' width='400'>
 
-:dizzy: **Compact fuzzy finder** _(below)_ shows more lines in the Ctrl+P dialog by reducing each item to a single line.
+💫 **Compact fuzzy finder** _(below)_ shows more lines in the Ctrl+P dialog by reducing each item to a single line.
 
 > <img src='docs/one-line-fuzzy-finder.png' width='400'>
 
-:ghost: **Terminal: stealth toolbar** _(below)_ makes the terminal toolbar blend in with the rest of the terminal, making terminals feel more integrated into Atom. (Also shown: _hide insert text button_)
+👻 **Terminal: stealth toolbar** _(below)_ makes the terminal toolbar blend in with the rest of the terminal, making terminals feel more integrated into Atom. (Also shown: _hide insert text button_)
 
 > <img src='docs/minimal-terminal.png' width='400'>
 
