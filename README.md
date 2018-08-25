@@ -4,17 +4,23 @@
 
 <br>
 
-# atom-ui-tweaks
+<h1 align='center'>atom-ui-tweaks</h1>
 
-> Prettify your Atom editor UI with these sleek tweaks :nail_care:
+<p align='center'>Prettify your Atom editor with these tweaks that <br> make Atom look sleek and minimal. 💅</p>
 
-Pimp your Atom editor with these tweaks that make Atom look more sleek and minimal :heart: Install [atom-ui-tweaks](http://atom.io/packages/atom-ui-tweaks) via apm, or Atom's package settings.
+<br>
+
+## Installation
+
+Install [atom-ui-tweaks] via apm, or Atom's package settings.
+
+[atom-ui-tweaks]: http://atom.io/packages/atom-ui-tweaks
 
 ```bash
 apm install atom-ui-tweaks
 ```
 
-Or Settings ➔ Packages ➔ Search for `atom-ui-tweaks`
+Or Settings ➔ Packages ➔ Search for `atom-ui-tweaks`.
 
 ## Screenshots
 
@@ -34,7 +40,7 @@ Or Settings ➔ Packages ➔ Search for `atom-ui-tweaks`
 
 > <img src='docs/splash-screen.png' width='400'>
 
-:point*right: **Cursor line style** *(below)_ allows you to restyle the highlight on the current line. Shown here is \_brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
+:point_right: **Cursor line style** _(below)_ allows you to restyle the highlight on the current line. Shown here is \_brighten_: a more subtle way of highlighting than changing the background. _(New in v0.2.0)_
 
 > <img src='docs/cursor-line-brighten.gif' width='400'>
 
